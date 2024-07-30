@@ -1,0 +1,20 @@
+<section class="course">
+    <div class="container">
+        <h2 class="text-center">
+            All Course
+        </h2>
+        <div class="row mt-3">
+            <div class="col-lg-3 mb-5" *ngFor="let data of course">
+                <div class="box text-center">
+                    <img src="{{data.image}}" alt="" width="100%">
+                    <h3 class="mt-2">{{data.name}}</h3>
+                    <p class="mt-2">{{data.description}}</p>
+                    <a class="btn btn-primary mt-2" href="{{data.url}}" target="_blank" mat-raised-button
+                        color="primary">Know more..</a>&nbsp;
+                    <button class="btn btn-success mt-2" [disabled]='ButtonStatus' mat-raised-button color="warn"
+                        (click)="joinNow()" routerLink="/joinNow">Join Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

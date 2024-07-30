@@ -1,0 +1,23 @@
+a{
+    font-size: 15px;
+    font-weight: bold;
+}
+a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+input{
+    width:1300px;
+}
+li{
+    float: left;
+}
+nav{
+    
+    position: sticky;
+    margin-top: 0px;
+}
+
+@media screen  and (max-width:600px){
+    
+}
